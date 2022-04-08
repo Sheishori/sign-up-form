@@ -72,7 +72,7 @@ header {
 	font-family: 'Orbitron', sans-serif;
 }
 
-header p {
+.credit {
 	margin-top: auto;
 	margin-bottom: 1rem;
 }
