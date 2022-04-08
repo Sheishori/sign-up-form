@@ -67,9 +67,19 @@ header {
 }
 
 .logo {
-	margin-top: 40vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30vh;
+	padding: 1.5rem;
 	background: rgb(0, 0, 0, 0.5);
+	font-size: min(4rem, 4.5vw);
 	font-family: 'Orbitron', sans-serif;
+}
+
+img {
+	width: 1.8ch;
+	margin-right: 1rem;
 }
 
 .credit {
