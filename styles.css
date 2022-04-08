@@ -3,6 +3,10 @@
    License: none (public domain)
 */
 
+:root {
+	--accent-color: fuchsia;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -22,13 +26,14 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, button {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	color: white;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -42,7 +47,10 @@ body {
 	height: 100vh;
 	background-color: rgb(46, 56, 70);
 	line-height: 1;
-	color: white;
+}
+
+ol, ul {
+	list-style: none;
 }
 
 header {
@@ -53,8 +61,23 @@ header {
 
 .logo {
 	margin-top: 40vh;
+	background: rgb(0, 0, 0, 0.5);
 }
 
 main {
 	align-self: center;
+}
+
+section {
+	background-color: rgb(90, 110, 138);
+}
+
+button {
+	border: none;
+	background-color: var(--accent-color);
+}
+
+.login a {
+	text-decoration: none;
+	color: var(--accent-color);
 }
