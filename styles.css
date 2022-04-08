@@ -89,6 +89,7 @@ img {
 }
 
 main {
+	flex: auto;
 	align-self: center;
 }
 
@@ -107,10 +108,36 @@ section {
 	margin: 2rem 0;
 	padding: 1.5rem var(--left-space);
 	background-color: rgb(90, 110, 138);
+	box-shadow: 0px 0.1rem 1rem 0.1rem rgb(40, 40, 40);
 }
 
 section p {
 	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+li {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 5rem;
+}
+
+li div {
+	margin: 0.7rem 0;
+}
+
+label {
+	display: block;
+	margin-bottom: 0.2rem;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+}
+
+input {
+	border: 0.1rem solid rgb(60, 60, 60);
+	border-radius: 0.3rem;
+	padding: 0.5ch;
+	font-size: 1rem;
 }
 
 button {
