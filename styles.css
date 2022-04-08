@@ -58,8 +58,11 @@ ol, ul {
 }
 
 header {
+	display: flex;
+	flex-direction: column;
 	width: 40vw;
 	background-color: rgb(17, 23, 31);
+	background: center / cover no-repeat url(./img/valentin-beauvais-yVUQlyRlJSw-unsplash.jpg);
 	text-align: center;
 }
 
@@ -67,6 +70,11 @@ header {
 	margin-top: 40vh;
 	background: rgb(0, 0, 0, 0.5);
 	font-family: 'Orbitron', sans-serif;
+}
+
+header p {
+	margin-top: auto;
+	margin-bottom: 1rem;
 }
 
 main {
