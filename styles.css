@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -5,6 +7,7 @@
 
 :root {
 	--accent-color: fuchsia;
+	--left-space: 3rem;
 }
 
 html {
@@ -47,6 +50,7 @@ body {
 	height: 100vh;
 	background-color: rgb(46, 56, 70);
 	line-height: 1;
+	font-family: sans-serif;
 }
 
 ol, ul {
@@ -62,22 +66,50 @@ header {
 .logo {
 	margin-top: 40vh;
 	background: rgb(0, 0, 0, 0.5);
+	font-family: 'Orbitron', sans-serif;
 }
 
 main {
 	align-self: center;
 }
 
+.top {
+	margin-left: var(--left-space);
+	width: 80%;
+	font-size: 1.5rem;
+}
+
+.top p:last-child {
+	margin-top: 2rem;
+	margin-bottom: 4rem;
+}
+
 section {
+	margin: 2rem 0;
+	padding: 1.5rem var(--left-space);
 	background-color: rgb(90, 110, 138);
 }
 
+section p {
+	font-size: 1.5rem;
+}
+
 button {
+	margin-left: var(--left-space);
+	padding: 1rem 2rem;
 	border: none;
+	border-radius: 1rem / 2rem;
+	font-weight: 600;
 	background-color: var(--accent-color);
 }
 
+.login {
+	margin-top: 2rem;
+	margin-left: var(--left-space);
+}
+
 .login a {
+	font-weight: 600;
 	text-decoration: none;
 	color: var(--accent-color);
 }
