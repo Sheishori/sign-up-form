@@ -3,6 +3,13 @@
    License: none (public domain)
 */
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -31,5 +38,23 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
+	display: flex;
+	height: 100vh;
+	background-color: rgb(46, 56, 70);
 	line-height: 1;
+	color: white;
+}
+
+header {
+	width: 40vw;
+	background-color: rgb(17, 23, 31);
+	text-align: center;
+}
+
+.logo {
+	margin-top: 40vh;
+}
+
+main {
+	align-self: center;
 }
