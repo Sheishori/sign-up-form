@@ -134,17 +134,31 @@ li div {
 }
 
 label {
-	display: block;
 	margin-bottom: 0.2rem;
 	font-size: 0.8rem;
 	text-transform: uppercase;
 }
 
 input {
+	display: block;
 	border: 0.1rem solid rgb(80, 80, 80);
 	border-radius: 0.3rem;
 	padding: 0.5ch 0.8ch;
 	font-size: 1rem;
+}
+
+input:focus {
+	outline: 0.1rem solid #f9982c;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown) {
+	outline: 0.1rem solid #ff2225;
+}
+
+input:invalid + span::after {
+	content: "* Passwords do not match";
+	font-size: 0.8rem;
+	color: #ff2225;
 }
 
 button {
