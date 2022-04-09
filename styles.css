@@ -91,6 +91,7 @@ img {
 main {
 	flex: auto;
 	align-self: center;
+	padding: 2rem 0;
 }
 
 .top {
