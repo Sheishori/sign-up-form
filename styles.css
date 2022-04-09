@@ -48,7 +48,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	display: flex;
 	min-height: 100vh;
-	background-color: rgb(46, 56, 70);
+	background-color: #060b11;
 	line-height: 1;
 	font-family: sans-serif;
 }
@@ -58,10 +58,11 @@ ol, ul {
 }
 
 header {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	width: 40vw;
-	background-color: rgb(17, 23, 31);
+	background-color: black;
 	background: center / cover no-repeat url(./img/valentin-beauvais-yVUQlyRlJSw-unsplash.jpg);
 	text-align: center;
 }
@@ -105,11 +106,16 @@ main {
 	margin-bottom: 4rem;
 }
 
+.top p,
+.login {
+	color: rgb(205, 223, 255);
+}
+
 section {
 	margin: 2rem 0;
 	padding: 1.5rem var(--left-space);
-	background-color: rgb(90, 110, 138);
-	box-shadow: 0px 0.1rem 1rem 0.1rem rgb(40, 40, 40);
+	background-color: #0c2946;
+	box-shadow: 0px 0.1rem 1rem 0.5rem rgb(0, 0, 0);
 }
 
 section p {
