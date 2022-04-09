@@ -134,7 +134,7 @@ label {
 }
 
 input {
-	border: 0.1rem solid rgb(60, 60, 60);
+	border: 0.1rem solid rgb(80, 80, 80);
 	border-radius: 0.3rem;
 	padding: 0.5ch;
 	font-size: 1rem;
@@ -142,7 +142,7 @@ input {
 
 button {
 	margin-left: var(--left-space);
-	padding: 1rem 2rem;
+	padding: 1rem 3rem;
 	border: none;
 	border-radius: 1rem / 2rem;
 	font-weight: 600;
